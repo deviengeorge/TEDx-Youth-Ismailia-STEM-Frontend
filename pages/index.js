@@ -1,6 +1,6 @@
 // Components
 import SEO from "../components/SEO";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import Section from "../components/Section";
 import SideNav from "../components/SideNav";
 
