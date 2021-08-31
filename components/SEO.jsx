@@ -1,10 +1,33 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 
-const SEO = ({ title }) => {
+const SEO = ({
+	title,
+	description = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat.",
+}) => {
+	const newTitle = `${title} | TEDx Youth Ismailia STEM`;
 	return (
-		<Head>
-			<title>{title} | TEDx Youth Ismailia STEM</title>
-		</Head>
+		<NextSeo
+			title={newTitle}
+			description={description}
+			openGraph={{
+				title: newTitle,
+				description: description,
+				images: [
+					{
+						url: "/images/logo.png",
+						width: 800,
+						height: 600,
+						alt: "Logo",
+					},
+				],
+				site_name: "TEDx Youth Ismailia STEM",
+			}}
+			twitter={{
+				handle: "@handle",
+				site: "@TEDxYouthIsmailiaSTEM",
+				cardType: "summary_large_image",
+			}}
+		/>
 	);
 };
 
