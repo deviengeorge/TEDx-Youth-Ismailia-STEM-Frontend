@@ -8,13 +8,14 @@ import Card from "../components/Card";
 import CardSlider from "../components/CardSlider";
 import GallerySlider from "../components/GallerySlider";
 import GallerySection from "../components/GallerySection";
+import Footer from "../components/Footer";
 
 export default function Home() {
 	return (
 		<>
 			<SEO title="Home" />
-			<div className="container">
-				<Navbar />
+			<Navbar />
+			<div className="container space-y-56">
 				<div className="flex h-screen items-center">
 					<Section>
 						<img
@@ -42,6 +43,7 @@ export default function Home() {
 				<CardSlider title="Our Team" withTheme />
 				<GallerySection title="Gallery" />
 			</div>
+			<Footer />
 		</>
 	);
 }

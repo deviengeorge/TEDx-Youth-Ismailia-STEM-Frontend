@@ -1,11 +1,16 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Navigation } from "swiper";
+
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
 
 const TeamSlider = () => {
 	return (
 		<Swiper
+			modules={[Navigation]}
+			navigation={true}
 			breakpoints={{
 				500: {
 					slidesPerView: 1,

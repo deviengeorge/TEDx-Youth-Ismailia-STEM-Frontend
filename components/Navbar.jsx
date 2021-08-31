@@ -42,7 +42,7 @@ const Navbar = () => {
 		setNavBar((prev) => !prev);
 	};
 	return (
-		<nav>
+		<nav className="container">
 			<div className="flex justify-between">
 				<div className="flex">
 					<Link href="#">

@@ -3,7 +3,7 @@ import GallerySlider from "./GallerySlider";
 
 const GallerySection = ({ title = "Gallery" }) => {
 	return (
-		<div className="space-y-14 my-20">
+		<div className="space-y-14">
 			<div className="text-center">
 				<h6 className="text-[#A81212] uppercase font-semibold">
 					Super Nova

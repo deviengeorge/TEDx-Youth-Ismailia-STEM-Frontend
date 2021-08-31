@@ -9,7 +9,7 @@ const Card = ({
 }) => {
 	const router = useRouter();
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2 my-64">
+		<div className="grid grid-cols-1 lg:grid-cols-2">
 			<div>
 				<h6 className="text-[#A81212] uppercase font-semibold">
 					Super Nova
