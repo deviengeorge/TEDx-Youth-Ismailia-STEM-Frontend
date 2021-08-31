@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 const TeamSlider = () => {
 	return (
 		<Swiper
+			className="select-none"
 			modules={[Navigation]}
 			navigation={true}
 			breakpoints={{

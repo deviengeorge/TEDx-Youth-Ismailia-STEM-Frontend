@@ -3,10 +3,8 @@ import SEO from "../components/SEO";
 import Navbar from "../components/Navbar";
 import Section from "../components/Section";
 import SideNav from "../components/SideNav";
-import TeamSlider from "../components/TeamSlider";
 import Card from "../components/Card";
 import CardSlider from "../components/CardSlider";
-import GallerySlider from "../components/GallerySlider";
 import GallerySection from "../components/GallerySection";
 import Footer from "../components/Footer";
 

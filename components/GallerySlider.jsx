@@ -10,7 +10,7 @@ import { EffectCoverflow } from "swiper";
 const GallerySlider = () => {
 	return (
 		<Swiper
-			className="w-full h-full my-20"
+			className="w-full h-full my-20 select-none"
 			effect={"coverflow"}
 			modules={[EffectCoverflow]}
 			grabCursor={true}
@@ -26,7 +26,7 @@ const GallerySlider = () => {
 		>
 			<div class="swiper-wrapper h-full">
 				{[1, 2, 1, 2, 1, 2, 1, 2].map((i) => (
-					<SwiperSlide className="!w-[800px] !h-[400px]">
+					<SwiperSlide className="!w-[40vw] !h-[30vh]">
 						<img
 							key={Math.floor(Math.random() * 10)}
 							className="h-full w-full object-cover"
