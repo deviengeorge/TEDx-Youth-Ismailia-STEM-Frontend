@@ -30,6 +30,13 @@ export default function Home() {
 				>
 					<img src="/images/theme-logo.png" alt="Theme logo" />
 				</Card>
+				<Card
+					title="About us"
+					description="Lorem ipsum dolor sit amet, consecteturPellentesque arcu consequat. egestas accumsan. Egestas id aliquet libero."
+					readMore="/about"
+				>
+					<img src="/images/image.png" alt="Crew" />
+				</Card>
 				<CardSlider title="Our Team" withTheme />
 			</div>
 		</>

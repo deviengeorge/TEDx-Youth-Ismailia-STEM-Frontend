@@ -1,12 +1,15 @@
 const ReadMoreButton = ({ onClick }) => {
 	return (
-		<button
-			className="py-5 font-semibold text-white flex items-center"
-			onClick={onClick}
-		>
-			Read More
-			<img className="pl-2" src="/images/vector.png" alt="" />
-		</button>
+		<div className="inline-flex space-x-2 items-center transform duration-300">
+			<button className="py-5 font-semibold text-white" onClick={onClick}>
+				Read More
+			</button>
+			<img
+				className="animate-readMoreButton"
+				src="/images/vector.png"
+				alt=""
+			/>
+		</div>
 	);
 };
 

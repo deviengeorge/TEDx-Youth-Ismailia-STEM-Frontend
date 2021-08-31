@@ -17,6 +17,15 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				pattern: "url('/images/background.png')",
 			}),
+			keyframes: {
+				readMoreButton: {
+					"0%, 100%": { transform: "translateX(0)" },
+					"50%": { transform: "translateX(0.5rem)" },
+				},
+			},
+			animation: {
+				readMoreButton: "readMoreButton 1s ease-in-out infinite",
+			},
 		},
 	},
 	variants: {

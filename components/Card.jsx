@@ -1,11 +1,15 @@
+import { useRouter } from "next/router";
+import ReadMoreButton from "./ReadMoreButton";
+
 const Card = ({
 	title = "Ideas Worth Spreading",
-	readMore = false,
 	description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam doloremque hic?",
+	readMore = "",
 	children,
 }) => {
+	const router = useRouter();
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2 my-12">
+		<div className="grid grid-cols-1 lg:grid-cols-2 my-64">
 			<div>
 				<h6 className="text-[#A81212] uppercase font-semibold">
 					Super Nova
@@ -15,13 +19,7 @@ const Card = ({
 					{description}
 				</h6>
 				{readMore ? (
-					<button
-						className="py-5 font-semibold text-white flex items-center"
-						onClick={() => console.log("Clicked")}
-					>
-						Read More
-						<img className="pl-2" src="/images/vector.png" alt="" />
-					</button>
+					<ReadMoreButton onClick={() => router.push(readMore)} />
 				) : null}
 			</div>
 			<div className="flex justify-center lg:justify-end items-center">
