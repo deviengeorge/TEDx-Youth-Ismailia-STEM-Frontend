@@ -5,15 +5,18 @@ const Card = ({
 	title = "Ideas Worth Spreading",
 	description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam doloremque hic?",
 	readMore = "",
+	withTheme = false,
 	children,
 }) => {
 	const router = useRouter();
 	return (
 		<div className="grid grid-cols-1 lg:grid-cols-2">
 			<div>
-				<h6 className="text-[#A81212] uppercase font-semibold">
-					Super Nova
-				</h6>
+				{withTheme ? (
+					<h6 className="text-[#A81212] uppercase font-semibold">
+						Super Nova
+					</h6>
+				) : null}
 				<h3 className="font-semibold text-white uppercase">{title}</h3>
 				<h6 className="font-semibold text-[#DDDDDD] pt-12 leading-7 tracking-wider">
 					{description}

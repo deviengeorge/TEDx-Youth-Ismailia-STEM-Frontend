@@ -11,6 +11,7 @@ const TeamSlider = () => {
 		<Swiper
 			className="select-none"
 			modules={[Navigation]}
+			grabCursor={true}
 			navigation={true}
 			breakpoints={{
 				500: {

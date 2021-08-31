@@ -37,13 +37,13 @@ const NavBarMobileLink = ({ children, path }) => {
 	);
 };
 
-const Navbar = () => {
+const Navbar = ({ absolute = false }) => {
 	const [active, setActive] = useState(false);
 	const toggleActive = () => {
 		setActive((prev) => !prev);
 	};
 	return (
-		<nav className="absolute container z-50">
+		<nav className={`${absolute ? "absolute" : null} container z-50`}>
 			<div className="flex justify-between">
 				<div className="flex">
 					<Link href="#">

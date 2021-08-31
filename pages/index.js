@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<>
 			<SEO title="Home" />
-			<Navbar />
+			<Navbar absolute />
 			<div className="container space-y-56">
 				<div className="flex h-screen items-center">
 					<Section>
@@ -28,12 +28,14 @@ export default function Home() {
 				<Card
 					title="Theme"
 					description="Lorem ipsum dolor sit amet, consectetur adipiscingPellentesque arcu consequat tristique sit sed. Ut ac aliquam quis cras auctor hendrerit arcu.egestas accumsan. Egestas id aliquet libero lorem turpis."
+					withTheme
 				>
 					<img src="/images/theme-logo.png" alt="Theme logo" />
 				</Card>
 				<Card
 					title="About us"
 					description="Lorem ipsum dolor sit amet, consecteturPellentesque arcu consequat. egestas accumsan. Egestas id aliquet libero."
+					withTheme
 					readMore="/about"
 				>
 					<img src="/images/image.png" alt="Crew" />

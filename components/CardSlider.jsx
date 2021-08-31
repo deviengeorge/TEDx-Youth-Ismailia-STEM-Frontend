@@ -9,7 +9,9 @@ const CardSlider = ({ title = "Ideas Worth Spreading", withTheme = false }) => {
 						Super Nova
 					</h6>
 				) : null}
-				<h3 className="font-semibold text-white uppercase">{title}</h3>
+				<h3 className="font-semibold text-white uppercase tracking-wider">
+					{title}
+				</h3>
 			</div>
 			<TeamSlider />
 		</div>
