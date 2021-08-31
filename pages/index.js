@@ -6,6 +6,8 @@ import SideNav from "../components/SideNav";
 import TeamSlider from "../components/TeamSlider";
 import Card from "../components/Card";
 import CardSlider from "../components/CardSlider";
+import GallerySlider from "../components/GallerySlider";
+import GallerySection from "../components/GallerySection";
 
 export default function Home() {
 	return (
@@ -38,6 +40,7 @@ export default function Home() {
 					<img src="/images/image.png" alt="Crew" />
 				</Card>
 				<CardSlider title="Our Team" withTheme />
+				<GallerySection title="Gallery" />
 			</div>
 		</>
 	);
