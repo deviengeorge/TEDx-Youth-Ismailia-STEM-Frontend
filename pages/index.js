@@ -3,6 +3,9 @@ import SEO from "../components/SEO";
 import Navbar from "../components/Navbar";
 import Section from "../components/Section";
 import SideNav from "../components/SideNav";
+import TeamSlider from "../components/TeamSlider";
+import Card from "../components/Card";
+import CardSlider from "../components/CardSlider";
 
 export default function Home() {
 	return (
@@ -21,9 +24,13 @@ export default function Home() {
 					<SideNav />
 				</div>
 				{/* Section 2 */}
-				<Section>
+				<Card
+					title="Theme"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscingPellentesque arcu consequat tristique sit sed. Ut ac aliquam quis cras auctor hendrerit arcu.egestas accumsan. Egestas id aliquet libero lorem turpis."
+				>
 					<img src="/images/theme-logo.png" alt="Theme logo" />
-				</Section>
+				</Card>
+				<CardSlider title="Our Team" withTheme />
 			</div>
 		</>
 	);

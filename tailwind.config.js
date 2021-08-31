@@ -6,6 +6,9 @@ module.exports = {
 	],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		fontFamily: {
+			normal: ["Montserrat", "ui-sans-serif", "sans-serif"],
+		},
 		container: {
 			center: true,
 			padding: "1rem",

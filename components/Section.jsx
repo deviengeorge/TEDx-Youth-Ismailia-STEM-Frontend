@@ -6,10 +6,10 @@ const Section = ({
 }) => {
 	return (
 		<div className="grid grid-cols-1 lg:grid-cols-2">
-			<div className="space-y-3">
-				<h4 className="text-white">{time}</h4>
+			<div className="space-y-7">
+				<h6 className="text-white">{time}</h6>
 				<h2 className="font-semibold text-white uppercase">{title}</h2>
-				<p className="text-white">{description}</p>
+				<h6 className="text-[#dddddd] tracking-wider">{description}</h6>
 				<button
 					className="py-5 font-semibold text-white flex items-center"
 					onClick={() => console.log("Clicked")}
