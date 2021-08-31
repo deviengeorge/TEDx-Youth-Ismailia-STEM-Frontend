@@ -1,4 +1,3 @@
-import Card from "./Card";
 import GallerySlider from "./GallerySlider";
 
 const GallerySection = ({ title = "Gallery" }) => {
