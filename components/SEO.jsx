@@ -14,7 +14,7 @@ const SEO = ({
 				description: description,
 				images: [
 					{
-						url: "/images/logo.png",
+						url: "https://siasky.net/EACF3HUObzQx5z37RhXZqR-x3hHWlg8ndCynnn62giZMpw",
 						width: 800,
 						height: 600,
 						alt: "Logo",
