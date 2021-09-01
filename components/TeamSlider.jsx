@@ -10,6 +10,7 @@ const TeamSlider = () => {
 	return (
 		<Swiper
 			className="select-none"
+			data-aos="zoom-in-up"
 			modules={[Navigation]}
 			grabCursor={true}
 			navigation={true}

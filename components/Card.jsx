@@ -40,7 +40,7 @@ const Card = ({
 			</div>
 			<div
 				className="flex justify-center lg:justify-end items-center"
-				data-aos="fade-left"
+				data-aos="flip-up"
 			>
 				{children}
 			</div>

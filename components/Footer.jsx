@@ -8,7 +8,7 @@ const FooterLink = ({ title, path }) => {
 		<li>
 			<Link href="/">
 				<a
-					className={`text-white ${
+					className={`text-white tracking-wider ${
 						active
 							? "font-bold border-b-2 border-white"
 							: "font-normal"
@@ -23,14 +23,18 @@ const FooterLink = ({ title, path }) => {
 
 const Footer = () => {
 	return (
-		<footer className="flex flex-col bg-red-600 text-white mt-20 py-4 space-y-3">
-			<ul className="flex justify-center items-center py-4 space-x-7">
+		<footer className="flex flex-col bg-red-600 text-white mt-20 py-5 space-y-5">
+			<ul className="flex justify-center items-center py-4 flex-col lg:flex-row space-y-7 lg:space-y-0 lg:space-x-7">
 				<FooterLink title="Home" path="/" />
 				<FooterLink title="About Us" path="/about" />
 				<FooterLink title="Team" path="/team" />
 				<FooterLink title="Contact" path="/contact" />
 				<FooterLink title="Gallery" path="/gallery" />
 			</ul>
+			<p className="text-white text-center">
+				{new Date().getFullYear()}© All rights reversed @TEDx Youth
+				Ismailia STEM
+			</p>
 		</footer>
 	);
 };
