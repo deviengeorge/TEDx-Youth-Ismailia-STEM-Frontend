@@ -27,8 +27,10 @@ const NavBarMobileLink = ({ children, path }) => {
 	return (
 		<Link href={path}>
 			<a
-				className={`block text-lg px-2 py-4 text-white font-semibold transition duration-300 ${
-					active ? "border-b-4 border-white" : ""
+				className={`block text-3xl px-2 py-6  font-semibold ${
+					active
+						? "bg-red-600 text-white px-20 rounded-full"
+						: "text-black"
 				}`}
 			>
 				{children}
@@ -94,14 +96,14 @@ const Navbar = ({ absolute = false }) => {
 
 				{/* Mobile Menu */}
 				<aside
-					className={`fixed bg-[#A81212] inset-0 z-30 h-full flex flex-col justify-around ${
+					className={`fixed bg-gray-200 inset-0 z-30 h-full flex flex-col justify-evenly py-2 ${
 						active ? "block overflow-scroll" : "hidden"
 					} lg:hidden`}
 				>
-					<div className="flex justify-center items-center">
+					<div className="flex justify-center items-center bg-black py-6">
 						<img className="h-20" src="/images/logo.png" alt="" />
 					</div>
-					<div className="text-center text-white flex flex-col items-center space-y-6">
+					<div className="text-center flex flex-col items-center space-y-6">
 						<NavBarMobileLink path="/">Home</NavBarMobileLink>
 						<NavBarMobileLink path="/about">About</NavBarMobileLink>
 						<NavBarMobileLink path="/team">Team</NavBarMobileLink>
@@ -115,7 +117,7 @@ const Navbar = ({ absolute = false }) => {
 					<div className="flex justify-center items-center">
 						<button
 							onClick={() => setActive(false)}
-							className="bg-white rounded-lg text-lg px-10 py-3 font-semibold tracking-wider"
+							className="bg-black rounded-lg text-white text-lg px-10 py-3 font-semibold tracking-wider"
 						>
 							Back
 						</button>

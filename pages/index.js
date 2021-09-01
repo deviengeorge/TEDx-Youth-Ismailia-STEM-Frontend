@@ -15,7 +15,7 @@ export default function Home() {
 			<Navbar absolute />
 			<div className="container space-y-56">
 				<div className="flex h-screen items-center">
-					<Section>
+					<Section readMore="/event">
 						<img
 							className="border-2 border-red-500 border-opacity-40"
 							src="/images/image.png"

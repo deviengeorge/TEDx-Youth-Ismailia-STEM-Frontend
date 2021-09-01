@@ -1,19 +1,36 @@
+import { useRouter } from "next/router";
+import Link from "next/link";
+
+const FooterLink = ({ title, path }) => {
+	const router = useRouter();
+	const active = router.pathname === path;
+	return (
+		<li>
+			<Link href="/">
+				<a
+					className={`text-white ${
+						active
+							? "font-bold border-b-2 border-white"
+							: "font-normal"
+					}`}
+				>
+					{title}
+				</a>
+			</Link>
+		</li>
+	);
+};
+
 const Footer = () => {
 	return (
-		<footer className="flex flex-col bg-[#A81212] text-white mt-20 p-10 pb-0 space-y-3">
-			<h3 className="font-bold">TEDx Youth Ismailia STEM</h3>
-			<h6 className="text-gray-200 max-w-7xl">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-				voluptas earum deleniti animi voluptatem quis fugit repellendus.
-				Neque, eum impedit eos labore eaque placeat recusandae qui
-				quisquam consectetur ut distinctio aliquam suscipit laborum non?
-				Quos eaque obcaecati molestiae magni facilis non, similique enim
-				itaque quam veniam sunt saepe, quo voluptates!
-			</h6>
-			<p className="text-center text-gray-300 py-10">
-				{new Date().getFullYear()}© TEDx Youth Ismailia STEM. All Right
-				Reserved
-			</p>
+		<footer className="flex flex-col bg-red-600 text-white mt-20 py-4 space-y-3">
+			<ul className="flex justify-center items-center py-4 space-x-7">
+				<FooterLink title="Home" path="/" />
+				<FooterLink title="About Us" path="/about" />
+				<FooterLink title="Team" path="/team" />
+				<FooterLink title="Contact" path="/contact" />
+				<FooterLink title="Gallery" path="/gallery" />
+			</ul>
 		</footer>
 	);
 };

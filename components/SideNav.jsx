@@ -1,6 +1,23 @@
+import { motion } from "framer-motion";
+
 const SideNav = () => {
 	return (
-		<div className="absolute left-0 bottom-0 w-10/12 h-24 bg-[#A81212] hidden lg:block">
+		<motion.div
+			initial={{
+				x: -600,
+				opacity: 0,
+			}}
+			animate={{
+				x: 0,
+				opacity: 1,
+			}}
+			transition={{
+				type: "spring",
+				stiffness: 50,
+				duration: 1,
+			}}
+			className="absolute left-0 bottom-0 w-10/12 h-24 bg-[#A81212] hidden lg:block"
+		>
 			<div className="flex h-full w-full justify-between items-center pl-10 gap-10">
 				{/* Social Links */}
 				<ul className="space-x-4 flex">
@@ -26,7 +43,7 @@ const SideNav = () => {
 					/>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

@@ -1,6 +1,9 @@
 const ReadMoreButton = ({ onClick }) => {
 	return (
-		<div className="inline-flex space-x-2 items-center transform duration-300">
+		<div
+			className="inline-flex space-x-2 items-center transform duration-300"
+			data-aos="fade-right"
+		>
 			<button className="py-5 font-semibold text-white" onClick={onClick}>
 				Read More
 			</button>

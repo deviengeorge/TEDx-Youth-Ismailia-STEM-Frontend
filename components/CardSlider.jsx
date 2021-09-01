@@ -5,11 +5,18 @@ const CardSlider = ({ title = "Ideas Worth Spreading", withTheme = false }) => {
 		<div className="space-y-14">
 			<div>
 				{withTheme ? (
-					<h6 className="text-[#A81212] uppercase font-semibold">
+					<h6
+						data-aos="fade-up"
+						className="text-[#A81212] uppercase font-semibold"
+					>
 						Super Nova
 					</h6>
 				) : null}
-				<h3 className="font-semibold text-white uppercase tracking-wider">
+				<h3
+					data-aos-delay="100"
+					data-aos="fade-up"
+					className="font-semibold text-white uppercase tracking-wider"
+				>
 					{title}
 				</h3>
 			</div>

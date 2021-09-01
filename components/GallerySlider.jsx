@@ -25,8 +25,8 @@ const GallerySlider = () => {
 			}}
 		>
 			<div class="swiper-wrapper h-full">
-				{[1, 2, 1, 2, 1, 2, 1, 2].map((i) => (
-					<SwiperSlide className="!w-[40vw] !h-[30vh]">
+				{[1, 2, 1, 2].map((i) => (
+					<SwiperSlide className="!w-[40vw] !h-[40vh]">
 						<img
 							key={Math.floor(Math.random() * 10)}
 							className="h-full w-full object-cover"

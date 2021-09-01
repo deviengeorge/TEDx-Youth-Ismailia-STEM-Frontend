@@ -4,10 +4,13 @@ import AOS from "aos";
 // Global Styles
 import "../public/global.css";
 
+// AOS Styles
+import "aos/dist/aos.css";
+
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		AOS.init({
-			duration: 2000,
+			once: false,
 		});
 	}, []);
 	return <Component {...pageProps} />;

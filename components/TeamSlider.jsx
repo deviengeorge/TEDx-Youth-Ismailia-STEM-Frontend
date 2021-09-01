@@ -31,12 +31,10 @@ const TeamSlider = () => {
 					spaceBetween: 50,
 				},
 			}}
-			onSlideChange={() => console.log("slide change")}
-			onSwiper={(swiper) => console.log(swiper)}
 		>
 			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
 				<img
-					className="object-cover rounded-3xl"
+					className="object-cover rounded-2xl"
 					src="/images/user1.png"
 					alt="user1 team member"
 				/>
@@ -47,7 +45,7 @@ const TeamSlider = () => {
 			</SwiperSlide>
 			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
 				<img
-					className="object-cover rounded-3xl"
+					className="object-cover rounded-2xl"
 					src="/images/user1.png"
 					alt="user1 team member"
 				/>
@@ -58,7 +56,7 @@ const TeamSlider = () => {
 			</SwiperSlide>
 			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
 				<img
-					className="object-cover rounded-3xl"
+					className="object-cover rounded-2xl"
 					src="/images/user1.png"
 					alt="user1 team member"
 				/>
@@ -69,7 +67,7 @@ const TeamSlider = () => {
 			</SwiperSlide>
 			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
 				<img
-					className="object-cover rounded-3xl"
+					className="object-cover rounded-2xl"
 					src="/images/user1.png"
 					alt="user1 team member"
 				/>
@@ -80,7 +78,7 @@ const TeamSlider = () => {
 			</SwiperSlide>
 			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
 				<img
-					className="object-cover rounded-3xl"
+					className="object-cover rounded-2xl"
 					src="/images/user1.png"
 					alt="user1 team member"
 				/>

@@ -4,7 +4,7 @@ const Heading = ({ title }) => {
 			<h6 className="text-[#A81212] uppercase font-semibold">
 				Super Nova
 			</h6>
-			<h3 className="font-semibold text-white uppercase">{title}</h3>
+			<h2 className="font-semibold text-white uppercase">{title}</h2>
 		</div>
 	);
 };
