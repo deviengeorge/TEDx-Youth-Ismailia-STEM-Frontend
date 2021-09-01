@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const NavBarLink = ({ children, path }) => {
 	const router = useRouter();
@@ -95,34 +95,53 @@ const Navbar = ({ absolute = false }) => {
 				</div>
 
 				{/* Mobile Menu */}
-				<aside
-					className={`fixed bg-gray-200 inset-0 z-30 h-full flex flex-col justify-evenly py-2 ${
-						active ? "block overflow-scroll" : "hidden"
-					} lg:hidden`}
-				>
-					<div className="flex justify-center items-center bg-black py-6">
-						<img className="h-20" src="/images/logo.png" alt="" />
-					</div>
-					<div className="text-center flex flex-col items-center space-y-6">
-						<NavBarMobileLink path="/">Home</NavBarMobileLink>
-						<NavBarMobileLink path="/about">About</NavBarMobileLink>
-						<NavBarMobileLink path="/team">Team</NavBarMobileLink>
-						<NavBarMobileLink path="/contact">
-							Contact
-						</NavBarMobileLink>
-						<NavBarMobileLink path="/gallery">
-							Gallery
-						</NavBarMobileLink>
-					</div>
-					<div className="flex justify-center items-center">
-						<button
-							onClick={() => setActive(false)}
-							className="bg-black rounded-lg text-white text-lg px-10 py-3 font-semibold tracking-wider"
+				<AnimatePresence>
+					{active && (
+						<motion.aside
+							initial={{ opacity: 0, x: -200 }}
+							transition={{
+								type: "tween",
+								
+							}}
+							animate={{ opacity: 1, x: 0 }}
+							exit={{ opacity: 0, x: -200 }}
+							className={`fixed bg-gray-200 inset-0 z-30 h-full flex flex-col justify-evenly py-2 overflow-hidden lg:hidden`}
 						>
-							Back
-						</button>
-					</div>
-				</aside>
+							<div className="flex justify-center items-center bg-black py-6">
+								<img
+									className="h-20"
+									src="/images/logo.png"
+									alt=""
+								/>
+							</div>
+							<div className="text-center flex flex-col items-center space-y-6">
+								<NavBarMobileLink path="/">
+									Home
+								</NavBarMobileLink>
+								<NavBarMobileLink path="/about">
+									About
+								</NavBarMobileLink>
+								<NavBarMobileLink path="/team">
+									Team
+								</NavBarMobileLink>
+								<NavBarMobileLink path="/contact">
+									Contact
+								</NavBarMobileLink>
+								<NavBarMobileLink path="/gallery">
+									Gallery
+								</NavBarMobileLink>
+							</div>
+							<div className="flex justify-center items-center">
+								<button
+									onClick={() => setActive(false)}
+									className="bg-black rounded-lg text-white text-lg px-10 py-3 font-semibold tracking-wider"
+								>
+									Back
+								</button>
+							</div>
+						</motion.aside>
+					)}
+				</AnimatePresence>
 			</nav>
 		</div>
 	);
