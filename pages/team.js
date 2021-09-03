@@ -6,14 +6,28 @@ import SEO from "../components/SEO";
 import axios from "axios";
 
 export async function getServerSideProps(ctx) {
-	const team = await axios.get("http://localhost:3000/api/team/mg");
+	const committees = [
+		"mg",
+		"pr",
+		"oc",
+		"hr",
+		"gd",
+		"cw",
+		"marketing",
+		"coaching",
+	];
+	const teams = {};
+	await committees.forEach(async (name) => {
+		console.log(name);
+		teams[name] = await axios.get(`http://localhost:3000/api/team/${name}`);
+	});
 	return {
-		props: { team: team.data },
+		props: { teams: teams },
 	};
 }
 
-export default function Team({ team }) {
-	console.log(team);
+export default function Team({ team, teams }) {
+	console.log(teams);
 	return (
 		<>
 			<SEO

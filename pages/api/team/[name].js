@@ -7,9 +7,9 @@ export default async function (req, res) {
 	console.log("The Team:", name);
 	const committees = {
 		mg: "Management Board",
-		pr: "Public Relation",
+		pr: "Public Relations",
 		ts: "Technical Support",
-		oc: "Organization",
+		oc: "Logistics",
 		hr: "Human Resource",
 		gd: "Graphic Design",
 		cw: "Content Writing",
