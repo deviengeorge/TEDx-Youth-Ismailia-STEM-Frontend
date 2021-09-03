@@ -5,18 +5,20 @@ const SideNav = () => {
 		<motion.div
 			initial={{
 				x: -600,
+				width: 20,
 				opacity: 0,
 			}}
 			animate={{
 				x: 0,
+				width: "70%",
 				opacity: 1,
 			}}
 			transition={{
-				type: "spring",
+				type: "tween",
 				stiffness: 50,
 				duration: 1,
 			}}
-			className="absolute left-0 bottom-0 w-10/12 h-24 bg-[#A81212] hidden lg:block"
+			className="absolute left-0 bottom-0 h-24 bg-brand hidden lg:block"
 		>
 			<div className="flex h-full w-full justify-between items-center pl-10 gap-10">
 				{/* Social Links */}
@@ -36,7 +38,7 @@ const SideNav = () => {
 				<div className="flex h-full items-center space-x-5 flex-1">
 					<img className="h-full" src="/images/image.png" alt="" />
 					<img
-						onClick={() => console.log("Clicked!")}
+						// onClick={() => console.log("Clicked!")}
 						className="h-1/5 cursor-pointer"
 						src="/images/arrow.png"
 						alt=""

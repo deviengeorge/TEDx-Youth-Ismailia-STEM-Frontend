@@ -35,7 +35,11 @@ const Section = ({
 					<ReadMoreButton onClick={() => router.push(readMore)} />
 				) : null}
 			</div>
-			<div className="flex justify-center lg:justify-end items-center">
+			<div
+				data-aos="fade-left"
+				data-aos-delay="600"
+				className="flex justify-center lg:justify-end items-center"
+			>
 				{children}
 			</div>
 		</div>

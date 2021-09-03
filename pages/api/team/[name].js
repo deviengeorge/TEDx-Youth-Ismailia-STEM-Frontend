@@ -4,7 +4,6 @@ import { base, minifyRecords } from "../../../utils/airtable";
 
 export default async function (req, res) {
 	const { name } = req.query;
-	console.log("The Team:", name);
 	const committees = {
 		mg: "Management Board",
 		pr: "Public Relations",

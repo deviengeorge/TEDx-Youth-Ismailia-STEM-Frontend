@@ -11,7 +11,7 @@ const CardSlider = ({
 				{withTheme ? (
 					<h6
 						data-aos="fade-up"
-						className="text-[#A81212] uppercase font-semibold"
+						className="text-brand uppercase font-semibold"
 					>
 						Super Nova
 					</h6>
@@ -19,7 +19,7 @@ const CardSlider = ({
 				<h3
 					data-aos-delay="100"
 					data-aos="fade-up"
-					className="font-semibold text-white uppercase tracking-wider border-b-4 inline-block border-[#A81212] pb-2"
+					className="font-semibold text-white uppercase tracking-wider inline-block border-b-4 border-brand lg:border-none pb-2"
 				>
 					{title}
 				</h3>

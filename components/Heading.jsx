@@ -1,9 +1,9 @@
-const Heading = ({ title }) => {
+const Heading = ({ title, padding = "pt-24" }) => {
 	return (
-		<div className="py-24 text-center lg:text-left">
+		<div className={`text-center lg:text-left ${padding}`}>
 			<h6
 				data-aos="fade-right"
-				className="text-[#A81212] uppercase font-semibold"
+				className="text-brand uppercase font-semibold"
 			>
 				Super Nova
 			</h6>

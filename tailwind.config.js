@@ -14,6 +14,9 @@ module.exports = {
 			padding: "1rem",
 		},
 		extend: {
+			colors: {
+				brand: "#A81212",
+			},
 			backgroundImage: (theme) => ({
 				pattern: "url('/images/background.png')",
 			}),

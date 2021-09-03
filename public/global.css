@@ -38,5 +38,5 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-	@apply !text-[#A81212];
+	@apply !text-brand;
 }

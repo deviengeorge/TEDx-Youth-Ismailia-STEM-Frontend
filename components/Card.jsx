@@ -14,7 +14,7 @@ const Card = ({
 			<div>
 				{withTheme ? (
 					<p
-						className="text-[#A81212] uppercase font-semibold"
+						className="text-brand uppercase font-semibold"
 						data-aos="fade-right"
 					>
 						Super Nova

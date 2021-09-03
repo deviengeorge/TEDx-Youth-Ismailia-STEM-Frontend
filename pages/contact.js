@@ -41,7 +41,7 @@ export default function contact() {
 			<NavBar absolute />
 			<div className="flex flex-col h-screen items-center justify-center space-y-5">
 				<Heading title="Contact Us" />
-				<div className="flex flex-col w-1/3 space-y-5">
+				<div className="flex flex-col w-2/3 md:w-1/3 space-y-5">
 					<Input title="Name" type="text" />
 					<Input delay={200} title="Email" type="text" />
 					<Input delay={400} title="Email" type="text" />

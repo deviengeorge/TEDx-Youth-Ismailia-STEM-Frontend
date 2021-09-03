@@ -12,24 +12,21 @@ export default function About() {
 				description="This is the About Page in TEDx Youth Ismailia STEM"
 			/>
 			<Navbar />
-			<div className="container space-y-24">
-				<Heading title="About Us" />
+			<div className="container space-y-48">
+				<Heading title="About Us" padding="pt-48" />
 
 				<Card description="Lorem ipsum dolor sit amet, consectetur adipiscingPellentesque arcu consequat tristique sit sed. Ut ac aliquam quis cras auctor hendrerit arcu.egestas accumsan. Egestas id aliquet libero lorem turpis.">
 					<img src="/images/image.png" alt="" />
 				</Card>
 
-				<hr className="bg-[#A81212] border-0 h-1" />
 				<Card description="Lorem ipsum dolor sit amet, consectetur adipiscingPellentesque arcu consequat tristique sit sed. Ut ac aliquam quis cras auctor hendrerit arcu.egestas accumsan. Egestas id aliquet libero lorem turpis.">
 					<img src="/images/image.png" alt="" />
 				</Card>
 
-				<hr className="bg-[#A81212] border-0 h-1" />
 				<Card description="Lorem ipsum dolor sit amet, consectetur adipiscingPellentesque arcu consequat tristique sit sed. Ut ac aliquam quis cras auctor hendrerit arcu.egestas accumsan. Egestas id aliquet libero lorem turpis.">
 					<img src="/images/image.png" alt="" />
 				</Card>
 
-				<hr className="bg-[#A81212] border-0 h-1" />
 				<Card description="Lorem ipsum dolor sit amet, consectetur adipiscingPellentesque arcu consequat tristique sit sed. Ut ac aliquam quis cras auctor hendrerit arcu.egestas accumsan. Egestas id aliquet libero lorem turpis.">
 					<img src="/images/image.png" alt="" />
 				</Card>

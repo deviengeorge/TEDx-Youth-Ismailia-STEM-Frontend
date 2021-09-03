@@ -1,12 +1,12 @@
 import GallerySlider from "./GallerySlider";
 
-const GallerySection = ({ title = "Gallery", soon = false }) => {
+const GallerySection = ({ title = "Gallery", data = [] }) => {
 	return (
 		<div className="space-y-14">
 			<div className="text-center">
 				<h6
 					data-aos="fade-down"
-					className="text-[#A81212] uppercase font-semibold"
+					className="text-brand uppercase font-semibold"
 				>
 					Super Nova
 				</h6>
@@ -18,7 +18,7 @@ const GallerySection = ({ title = "Gallery", soon = false }) => {
 					{title}
 				</h3>
 			</div>
-			<GallerySlider soon={soon} />
+			<GallerySlider soon={data.length == 0 ? true : false} data={data} />
 		</div>
 	);
 };

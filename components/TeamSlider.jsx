@@ -33,7 +33,7 @@ const TeamSlider = ({ sliderData }) => {
 					<img
 						className="object-cover bg-center rounded-2xl h-80 w-80"
 						src={data.Image}
-						alt="user1 team member"
+						alt={`${data.Name} ${data.Position}`}
 					/>
 					<div className="flex flex-col space-y-2 text-white text-center uppercase">
 						<h6>{data.Name}</h6>
