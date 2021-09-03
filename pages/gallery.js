@@ -15,8 +15,8 @@ export default function Gallery() {
 			<div className="container space-y-24">
 				<Heading title="Gallery" />
 				<GallerySection title="Opening Day" />
-				<GallerySection title="Closing Day" />
-				<GallerySection title="Event Day" />
+				<GallerySection title="Closing Day" soon />
+				<GallerySection title="Event Day" soon />
 			</div>
 			<Footer />
 		</>

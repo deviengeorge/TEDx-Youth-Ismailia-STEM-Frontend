@@ -1,6 +1,10 @@
 import TeamSlider from "./TeamSlider";
 
-const CardSlider = ({ title = "Ideas Worth Spreading", withTheme = false }) => {
+const CardSlider = ({
+	title = "Ideas Worth Spreading",
+	withTheme = false,
+	sliderData,
+}) => {
 	return (
 		<div className="space-y-14">
 			<div>
@@ -20,7 +24,7 @@ const CardSlider = ({ title = "Ideas Worth Spreading", withTheme = false }) => {
 					{title}
 				</h3>
 			</div>
-			<TeamSlider />
+			<TeamSlider sliderData={sliderData} />
 		</div>
 	);
 };

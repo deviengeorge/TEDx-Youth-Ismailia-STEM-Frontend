@@ -1,6 +1,6 @@
 import GallerySlider from "./GallerySlider";
 
-const GallerySection = ({ title = "Gallery" }) => {
+const GallerySection = ({ title = "Gallery", soon = false }) => {
 	return (
 		<div className="space-y-14">
 			<div className="text-center">
@@ -18,7 +18,7 @@ const GallerySection = ({ title = "Gallery" }) => {
 					{title}
 				</h3>
 			</div>
-			<GallerySlider />
+			<GallerySlider soon={soon} />
 		</div>
 	);
 };

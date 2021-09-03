@@ -1,12 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Navigation } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
-const TeamSlider = () => {
+const TeamSlider = ({ sliderData }) => {
 	return (
 		<Swiper
 			className="select-none"
@@ -33,61 +32,19 @@ const TeamSlider = () => {
 				},
 			}}
 		>
-			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
-				<img
-					className="object-cover rounded-2xl"
-					src="/images/user1.png"
-					alt="user1 team member"
-				/>
-				<div className="flex flex-col space-y-2 text-white text-center uppercase">
-					<h6>Morgan Freemanusa</h6>
-					<p>Actor</p>
-				</div>
-			</SwiperSlide>
-			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
-				<img
-					className="object-cover rounded-2xl"
-					src="/images/user1.png"
-					alt="user1 team member"
-				/>
-				<div className="flex flex-col space-y-2 text-white text-center uppercase">
-					<h6>Morgan Freemanusa</h6>
-					<p>Actor</p>
-				</div>
-			</SwiperSlide>
-			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
-				<img
-					className="object-cover rounded-2xl"
-					src="/images/user1.png"
-					alt="user1 team member"
-				/>
-				<div className="flex flex-col space-y-2 text-white text-center uppercase">
-					<h6>Morgan Freemanusa</h6>
-					<p>Actor</p>
-				</div>
-			</SwiperSlide>
-			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
-				<img
-					className="object-cover rounded-2xl"
-					src="/images/user1.png"
-					alt="user1 team member"
-				/>
-				<div className="flex flex-col space-y-2 text-white text-center uppercase">
-					<h6>Morgan Freemanusa</h6>
-					<p>Actor</p>
-				</div>
-			</SwiperSlide>
-			<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
-				<img
-					className="object-cover rounded-2xl"
-					src="/images/user1.png"
-					alt="user1 team member"
-				/>
-				<div className="flex flex-col space-y-2 text-white text-center uppercase">
-					<h6>Morgan Freemanusa</h6>
-					<p>Actor</p>
-				</div>
-			</SwiperSlide>
+			{sliderData?.map((data) => (
+				<SwiperSlide className="flex flex-col items-center justify-center space-y-5">
+					<img
+						className="object-cover bg-center rounded-2xl h-80 w-80"
+						src={data.Image}
+						alt="user1 team member"
+					/>
+					<div className="flex flex-col space-y-2 text-white text-center uppercase">
+						<h6>{data.Name}</h6>
+						<p>{data.Position}</p>
+					</div>
+				</SwiperSlide>
+			))}
 		</Swiper>
 	);
 };

@@ -53,7 +53,7 @@ const Navbar = ({ absolute = false }) => {
 			>
 				<div className="flex justify-between">
 					<div className="flex">
-						<Link href="#">
+						<Link href="/">
 							<a className="flex items-center py-4 px-2">
 								<img
 									src="/images/logo.png"
@@ -101,7 +101,6 @@ const Navbar = ({ absolute = false }) => {
 							initial={{ opacity: 0, x: -200 }}
 							transition={{
 								type: "tween",
-								
 							}}
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: -200 }}
