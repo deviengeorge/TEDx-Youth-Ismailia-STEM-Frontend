@@ -15,12 +15,8 @@ const TeamSlider = ({ sliderData }) => {
 			navigation={true}
 			breakpoints={{
 				500: {
-					slidesPerView: 1,
-					spaceBetween: 10,
-				},
-				700: {
 					slidesPerView: 2,
-					spaceBetween: 20,
+					spaceBetween: 10,
 				},
 				1000: {
 					slidesPerView: 3,

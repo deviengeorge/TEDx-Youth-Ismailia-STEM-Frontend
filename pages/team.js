@@ -6,28 +6,15 @@ import SEO from "../components/SEO";
 import axios from "axios";
 
 export async function getServerSideProps(ctx) {
-	const committees = [
-		"mg",
-		"pr",
-		"oc",
-		"hr",
-		"gd",
-		"cw",
-		"marketing",
-		"coaching",
-	];
-	const teams = {};
-	await committees.forEach(async (name) => {
-		console.log(name);
-		teams[name] = await axios.get(`http://localhost:3000/api/team/${name}`);
-	});
+	const team = await axios.get(`http://localhost:3000/api/teams`);
 	return {
-		props: { teams: teams },
+		props: { team: team.data },
 	};
 }
 
-export default function Team({ team, teams }) {
-	console.log(teams);
+export default function Team({ team }) {
+	const committeesName = Object.keys(team);
+	console.log(team[committeesName[0]]);
 	return (
 		<>
 			<SEO
@@ -37,9 +24,18 @@ export default function Team({ team, teams }) {
 			<Navbar />
 			<div className="container space-y-24 text-center lg:text-left">
 				<Heading title="our team" />
-				<CardSlider title="High Board" sliderData={team} />
-				<CardSlider title="Technical Support" sliderData={team} />
-				<CardSlider title="Human Resource" sliderData={team} />
+				{Object.keys(team).map((key) => {
+					if (team[key].length == 0) {
+						return null;
+					}
+					return (
+						<CardSlider
+							key={key}
+							title={key}
+							sliderData={team[key]}
+						/>
+					);
+				})}
 			</div>
 			<Footer />
 		</>
