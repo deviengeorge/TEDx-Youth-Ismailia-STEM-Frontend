@@ -8,7 +8,9 @@ import GallerySection from "../components/GallerySection";
 import SEO from "../components/SEO";
 
 export async function getServerSideProps(ctx) {
-	const gallery = await axios.get(`${process.env.BACKEND_URL}/gallery`);
+	const gallery = await axios.get(
+		`https://tedx-youth-ismailia-stem.vercel.app/api/gallery`
+	);
 	return {
 		props: { gallery: gallery.data },
 	};
