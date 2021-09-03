@@ -14,7 +14,6 @@ export async function getServerSideProps(ctx) {
 }
 
 export default function Team({ team }) {
-	const committeesName = Object.keys(team);
 	return (
 		<>
 			<SEO
