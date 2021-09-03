@@ -6,7 +6,7 @@ import SEO from "../components/SEO";
 import axios from "axios";
 
 export async function getServerSideProps(ctx) {
-	const team = await axios.get(`http://localhost:3000/api/teams`);
+	const team = await axios.get(`${process.env.BACKEND_URL}/teams`);
 	return {
 		props: { team: team.data },
 	};

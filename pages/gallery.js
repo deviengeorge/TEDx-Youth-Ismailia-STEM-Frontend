@@ -8,7 +8,7 @@ import GallerySection from "../components/GallerySection";
 import SEO from "../components/SEO";
 
 export async function getServerSideProps(ctx) {
-	const gallery = await axios.get(`http://localhost:3000/api/gallery`);
+	const gallery = await axios.get(`${process.env.BACKEND_URL}/gallery`);
 	return {
 		props: { gallery: gallery.data },
 	};
