@@ -18,7 +18,8 @@ module.exports = {
 				brand: "#A81212",
 			},
 			backgroundImage: (theme) => ({
-				pattern: "url('/images/background.png')",
+				pattern:
+					"url('https://res.cloudinary.com/tedx-youth-ismailia-stem/image/upload/v1630784690/background_1_hhr0cl.png')",
 			}),
 			keyframes: {
 				readMoreButton: {

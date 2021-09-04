@@ -8,6 +8,10 @@ const Card = ({
 	withTheme = false,
 	children,
 }) => {
+	const newDescription =
+		description.length >= 160
+			? description.substring(0, 160).trim() + "..."
+			: description;
 	const router = useRouter();
 	return (
 		<div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -32,7 +36,7 @@ const Card = ({
 					data-aos-delay="200"
 					className="font-semibold text-[#DDDDDD] pt-12 leading-7 tracking-wider"
 				>
-					{description}
+					{newDescription}
 				</h6>
 				{readMore ? (
 					<ReadMoreButton onClick={() => router.push(readMore)} />

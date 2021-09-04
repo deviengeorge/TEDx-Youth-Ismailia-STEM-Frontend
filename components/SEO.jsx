@@ -14,7 +14,7 @@ const SEO = ({
 				description: description,
 				images: [
 					{
-						url: "https://siasky.net/EACF3HUObzQx5z37RhXZqR-x3hHWlg8ndCynnn62giZMpw",
+						url: "https://res.cloudinary.com/tedx-youth-ismailia-stem/image/upload/v1630784673/TEDxYouthIsmailiaSTEM_majjcj.png",
 						width: 800,
 						height: 600,
 						alt: "Logo",

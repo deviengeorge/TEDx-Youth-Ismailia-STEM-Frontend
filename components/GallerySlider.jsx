@@ -32,10 +32,10 @@ const GallerySlider = ({ soon = false, data }) => {
 			grabCursor={true}
 			centeredSlides={true}
 			slidesPerView="auto"
-			autoplay={{
-				delay: 2000,
-				pauseOnMouseEnter: true,
-			}}
+			// autoplay={{
+			// 	delay: 2000,
+			// 	pauseOnMouseEnter: true,
+			// }}
 			coverflowEffect={{
 				rotate: 50,
 				stretch: 0,

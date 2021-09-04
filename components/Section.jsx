@@ -12,7 +12,7 @@ const Section = ({
 }) => {
 	const router = useRouter();
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2">
+		<div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 			<div className="space-y-7">
 				<h6 data-aos="fade-right" className="text-white">
 					{time}

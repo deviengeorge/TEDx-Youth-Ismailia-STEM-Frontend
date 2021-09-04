@@ -1,6 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-import { base, minifyRecords } from "../../utils/airtable";
+import { base, minifyRecords } from "../../../utils/airtable";
 
 const groupDay = (records, day) => {
 	const groupedPics = [];
@@ -13,6 +11,7 @@ const groupDay = (records, day) => {
 };
 
 export default async function (req, res) {
+	const { name } = req.query;
 	const table = base("Gallery");
 
 	let pics = await table
@@ -23,15 +22,11 @@ export default async function (req, res) {
 	pics = minifyRecords(pics);
 
 	const days = {
-		Opening: "Opening",
-		Event: "Event",
-		Closing: "Closing",
+		opening: "Opening",
+		event: "Event",
+		closing: "Closing",
 	};
 
-	const groupedDays = {};
-	for (const day in days) {
-		groupedDays[days[day]] = groupDay(pics, day);
-	}
-
-	res.status(200).json(groupedDays);
+	pics = groupDay(pics, days[name]);
+	res.status(200).json(pics);
 }
