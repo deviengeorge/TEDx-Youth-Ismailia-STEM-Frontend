@@ -47,16 +47,16 @@ export default function Home({ gallery }) {
 						// readMore="/event"
 						description="Our event Is coming soon, we will be as the most powerful, luminous and great supernova. STAY TUNED"
 					>
-						{/* <img
+						<img
 							className="border-2 border-red-500 border-opacity-40 h-full"
-							src="https://res.cloudinary.com/tedx-youth-ismailia-stem/image/upload/v1630846206/EVENT-1_1_gljaad.png"
+							src="https://res.cloudinary.com/tedx-youth-ismailia-stem/image/upload/v1630862503/Pink_Elegant_Makeup_Facebook_Cover_7_1_lsthtj.png"
 							alt="event"
-						/> */}
-						<video
+						/>
+						{/* <video
 							className="border-2 border-red-500 border-opacity-40 h-full"
 							src="https://res.cloudinary.com/tedx-youth-ismailia-stem/video/upload/v1630858056/Theme-Video_xqahen.mp4"
 							autoPlay
-						/>
+						/> */}
 					</Section>
 					{/* <SideNav /> */}
 				</div>
