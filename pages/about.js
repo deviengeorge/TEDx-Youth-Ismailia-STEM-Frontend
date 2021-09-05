@@ -7,10 +7,7 @@ import SEO from "../components/SEO";
 export default function About() {
 	return (
 		<>
-			<SEO
-				title="About Us"
-				description="This is the About Page in TEDx Youth Ismailia STEM"
-			/>
+			<SEO title="About Us" />
 			<Navbar />
 			<div className="container space-y-48">
 				<Heading title="About Us" padding="pt-48" />

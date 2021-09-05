@@ -18,10 +18,7 @@ export async function getServerSideProps(ctx) {
 export default function Gallery({ gallery }) {
 	return (
 		<>
-			<SEO
-				title="Galley"
-				description="This is the description of the gallery page in tedx ismalia stem youth"
-			/>
+			<SEO title="Galley" />
 			<Navbar />
 			<div className="container space-y-48">
 				<Heading title="Gallery" padding="pt-48" />

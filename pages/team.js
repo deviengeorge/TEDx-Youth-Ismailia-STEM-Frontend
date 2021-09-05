@@ -16,10 +16,7 @@ export async function getServerSideProps(ctx) {
 export default function Team({ team }) {
 	return (
 		<>
-			<SEO
-				title="Team"
-				description="This the Team Page in TEDx Youth Ismailia STEM Website"
-			/>
+			<SEO title="Team" />
 			<Navbar />
 			<div className="container space-y-24 text-center lg:text-left">
 				<Heading title="our team" />

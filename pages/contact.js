@@ -1,6 +1,7 @@
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
+import SEO from "../components/SEO";
 
 const Input = ({ title, type = "text", delay = 0 }) => {
 	return (
@@ -38,6 +39,7 @@ const Input = ({ title, type = "text", delay = 0 }) => {
 export default function contact() {
 	return (
 		<>
+			<SEO title="Contact" />
 			<NavBar absolute />
 			<div className="flex flex-col h-screen items-center justify-center space-y-5">
 				<Heading title="Contact Us" />
