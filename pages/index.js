@@ -1,13 +1,14 @@
+import axios from "axios";
+
 // Components
 import SEO from "../components/SEO";
 import Navbar from "../components/Navbar";
 import Section from "../components/Section";
-import SideNav from "../components/SideNav";
 import Card from "../components/Card";
 import CardSlider from "../components/CardSlider";
 import GallerySection from "../components/GallerySection";
 import Footer from "../components/Footer";
-import axios from "axios";
+// import SideNav from "../components/SideNav";
 
 export async function getServerSideProps(ctx) {
 	const backend_url = process.env.BACKEND_URL;
@@ -47,14 +48,13 @@ export default function Home({ gallery }) {
 						description="Our event Is coming soon, we will be as the most powerful, luminous and great supernova. STAY TUNED"
 					>
 						<img
-							className="border-2 border-red-500 border-opacity-40"
-							src="https://res.cloudinary.com/tedx-youth-ismailia-stem/image/upload/v1630784887/image_vbjsjo.png"
-							alt="Team Members"
+							className="border-2 border-red-500 border-opacity-40 h-full"
+							src="https://res.cloudinary.com/tedx-youth-ismailia-stem/image/upload/v1630846206/EVENT-1_1_gljaad.png"
+							alt="event"
 						/>
 					</Section>
-					<SideNav />
+					{/* <SideNav /> */}
 				</div>
-				{/* Section 2 */}
 				<Card
 					title="Theme"
 					description="Supernova is the explosion occurs at the end of the life for the stars and it is the most luminous, powerful and great explosion in the universe as the star we will be during our season and at the event our supernova will occur with a special,great and powerful event."
@@ -67,11 +67,14 @@ export default function Home({ gallery }) {
 				</Card>
 				<Card
 					title="About us"
-					description="TEDxYouthIsmailiaSTEM is a local event hosted for the second season, Ismailia STEM high school is one of nineteenth STEM schools in Egypt, Our main target audience is STEM students, High school students and some universities, our theme for season^21 is “SUPERNOVA” , Supernova is the most luminous, powerful and great explosion occurs at the end of stars life cycle, we will be like stars during the season and at the end we will explode as Supernova."
-					withTheme
+					description="TEDxYouthIsmailiaSTEM is a local event hosted for the second season, Ismailia STEM high school is one of nineteenth STEM schools in Egypt..."
+					withThem
 					readMore="/about"
 				>
-					<img src="/images/image.png" alt="Crew" />
+					<img
+						src="https://res.cloudinary.com/tedx-youth-ismailia-stem/image/upload/v1630784887/image_vbjsjo.png"
+						alt="Crew"
+					/>
 				</Card>
 				<CardSlider
 					title="Our Team"

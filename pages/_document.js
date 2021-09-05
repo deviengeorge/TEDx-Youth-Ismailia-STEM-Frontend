@@ -21,7 +21,7 @@ class MyDocument extends Document {
 						rel="stylesheet"
 					/>
 				</Head>
-				<body className="bg-repeat bg-cover bg-pattern font-normal">
+				<body className="bg-repeat bg-cover bg-pattern bg-black font-normal">
 					<Main />
 					<NextScript />
 				</body>

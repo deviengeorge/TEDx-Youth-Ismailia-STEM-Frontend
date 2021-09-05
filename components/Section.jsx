@@ -8,7 +8,7 @@ const Section = ({
 	description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, blanditiis? Dignissimos dolorem at sit atque.",
 	children,
 	readMore = "",
-	time = "Coming Soon",
+	time = "08 ― October, 2021",
 }) => {
 	const router = useRouter();
 	return (
@@ -38,7 +38,7 @@ const Section = ({
 			<div
 				data-aos="fade-left"
 				data-aos-delay="600"
-				className="flex justify-center lg:justify-end items-center"
+				className="flex justify-center lg:justify-end items-center md:pl-44"
 			>
 				{children}
 			</div>
