@@ -48,7 +48,7 @@ const GallerySlider = ({ soon = false, data }) => {
 				{data?.map((entity, index) => (
 					<SwiperSlide
 						key={entity.Image}
-						className="!w-[40vw] !h-[40vh] "
+						className="!w-[80vw] lg:!w-[40vw] lg:!h-[40vh] !h-[40vh]"
 					>
 						<img
 							className="h-full w-full object-cover swiper-lazy"
