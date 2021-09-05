@@ -45,8 +45,8 @@ export default function contact() {
 				<Heading title="Contact Us" />
 				<div className="flex flex-col w-2/3 md:w-1/3 space-y-5">
 					<Input title="Name" type="text" />
-					<Input delay={200} title="Email" type="text" />
-					<Input delay={400} title="Email" type="text" />
+					<Input delay={200} title="Email" type="emai" />
+					<Input delay={400} title="Subject" type="text" />
 					<Input delay={600} title="Content" type="textArea" />
 					<button
 						data-aos="fade-right"
